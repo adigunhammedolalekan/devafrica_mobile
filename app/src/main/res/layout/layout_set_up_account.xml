@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/loading_layout_set_up_account"
+        android:background="@color/transparent_white">
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            app:matProg_progressIndeterminate="true"
+            app:matProg_barColor="@color/colorAccent"/>
+    </RelativeLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome, Yo Developer!"
+                android:textSize="16sp"
+                android:textAppearance="@style/BoldText"
+                android:textColor="@color/textColorPrimary" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your account has been created, Now, lets set it up account."
+                android:textColor="@color/textColorSecondary" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Add Your Photo"
+                android:textStyle="normal"
+                android:textColor="@color/textColorSecondary"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_gravity="center_horizontal"
+                android:src="@color/divider"
+                android:id="@+id/iv_user_set_up_your_account"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bio"
+                app:met_helperText="Write short note about yourself"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="@color/colorPrimary"
+                android:id="@+id/bio_edt_set_up_account"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_select_language"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stack"
+                        android:textAppearance="@style/BoldText"
+                        android:textColor="@color/textColorPrimary"
+                        android:textStyle="bold"
+                        android:paddingTop="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:id="@+id/stack_tv_set_up_account"
+                        android:paddingBottom="16dp"
+                        android:text="Tap here to select Languages that you speak"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="+234"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.3"
+                    android:enabled="false"/>
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="@color/colorAccent"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_helperText="Your mobile phone number."
+                    app:met_floatingLabelText="Phone Number"
+                    android:layout_weight="1.7"
+                    android:id="@+id/phone_number_edt_set_up_account"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinner_select_country"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v7.widget.CardView>

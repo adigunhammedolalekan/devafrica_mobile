@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:text="#android"
+    android:padding="6dp"
+    android:textStyle="bold"
+    android:layout_margin="4dp"
+    android:textAppearance="@style/BoldText"
+    android:textColor="@color/white"
+    android:id="@+id/tag_name_tag"
+    android:background="@drawable/tag_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+</TextView>

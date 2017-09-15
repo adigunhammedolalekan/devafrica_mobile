@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_item_bookmark_false"
+        android:icon="@drawable/ic_action_bookmark_false"
+        app:showAsAction="always"
+        android:visible="false"
+        android:title="Add to Bookmark"/>
+    <item android:id="@+id/menu_item_bookmark_true"
+        android:icon="@drawable/ic_action_bookmark_true"
+        app:showAsAction="always"
+        android:visible="false"
+        android:title="remove from bookmark"/>
+    <item android:id="@+id/menu_item_share_post"
+        android:icon="@drawable/ic_action_share"
+        app:showAsAction="always"
+        android:title="Share"/>
+</menu>

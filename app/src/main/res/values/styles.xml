@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.Login" parent="AppTheme.NoActionBar">
+        <item name="colorControlNormal">@color/transparent_white</item>
+        <item name="colorControlHighlight">@color/transparent_white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="ButtonStyleBorderLess" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="BoldText" parent="android:TextAppearance">
+        <item name="fontPath">font/Lato-Black.ttf</item>
+    </style>
+    <style name="SearchStyle">
+        <item name="searchBackground">@color/colorPrimary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:hint">Search posts, Devs, tags...</item>
+    </style>
+    <style name="ButtonStyle.Green" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="colorButtonNormal">@color/green</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

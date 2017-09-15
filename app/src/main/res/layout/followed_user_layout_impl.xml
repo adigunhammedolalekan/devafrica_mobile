@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        android:id="@+id/no_follower_layout_followed_user_layout_impl"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            app:materialIcon="account_off"
+            app:materialIconColor="@color/divider"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="You have no Follower"/>
+    </LinearLayout>
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        app:matProg_barColor="@color/colorAccent"
+        android:id="@+id/pw_followed_user_layout"
+        app:matProg_progressIndeterminate="true"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_followed_user_layout"
+        android:scrollbars="vertical"/>
+</RelativeLayout>

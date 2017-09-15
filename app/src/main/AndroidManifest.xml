@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.beem24.projects.devafrica">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".DevAfrica"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id" />
+        <activity android:name=".ui.activities.EntryActivity" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.CreateAccountActivity" android:theme="@style/AppTheme.Login" />
+        <activity android:name=".ui.activities.LoginActivity" android:theme="@style/AppTheme.Login" />
+        <activity android:name=".ui.activities.MainActivity" android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.activities.NewTopicActivity" android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".ui.activities.TopicDetailsActivity" android:theme="@style/AppTheme" />
+        <activity android:name=".ui.activities.ActivityWriteResponse" android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".ui.activities.PostReplyActivity" android:theme="@style/AppTheme" />
+        <activity android:name=".ui.activities.UpdateAccountActivity" android:theme="@style/AppTheme" />
+        <activity android:name=".ui.activities.FollowUserActivity" android:theme="@style/AppTheme" />
+        <activity android:name=".ui.activities.SearchActivity" android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.activities.ActivityProfile" android:theme="@style/AppTheme" />
+        <activity android:name=".ui.activities.ActivityNewTopic" android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".ui.activities.ActivitySelectStack" android:theme="@style/AppTheme" />
+        <activity android:name=".ui.activities.CongratulationActivity" android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.activities.SettingsActivity" android:theme="@style/AppTheme" />
+        <activity android:name=".ui.activities.EditProfileActivity" android:theme="@style/AppTheme" />
+
+        <service android:name=".services.NotificationService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".services.FcmTokenListener">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <provider
+            android:authorities="com.facebook.app.FacebookContentProvider1234"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+    </application>
+</manifest>

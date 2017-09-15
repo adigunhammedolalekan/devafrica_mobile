@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DevAfrica</string>
+
+    <string name="lorem">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </string>
+    <string-array name="countries">
+        <item>Nigeria</item>
+        <item>Kenya</item>
+        <item>South Africa</item>
+    </string-array>
+    <string name="fb_app_id">378582235878463</string>
+    <string name="fb_login_protocol_scheme">fb100706940649934</string>
+    <string name="okay_you_don_t_need_it">AAAAQaWMJqw:APA91bG5WeWKAxoONCn9k-UHQ5zzufsX0jhB4v0syXR1hiFTusP0gWw6YnfcvC_2ZLtrpAvJp6qEG-AKjQss8NE1k5Yk5a_4CMklB2A10I91olWF-1Fz_dqGgjskdoV7Bdj_HgmFPdrE</string>
+</resources>

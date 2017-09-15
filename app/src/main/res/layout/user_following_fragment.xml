@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_user_following_list"/>
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:matProg_progressIndeterminate="true"
+        app:matProg_barColor="@color/colorAccent"
+        android:id="@+id/pw_following_fragment"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="16dp"
+        android:id="@+id/error_layout_user_following"
+        android:layout_centerInParent="true">
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            app:materialIcon="face"
+            app:materialIconColor="@color/divider"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Opps! There was an error. Tap anywhere to retry"/>
+    </LinearLayout>
+</RelativeLayout>

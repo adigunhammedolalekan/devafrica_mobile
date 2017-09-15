@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="0dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:id="@+id/layout_notification_root">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@color/divider"
+            app:civ_border_color="@color/light__"
+            app:civ_border_width="2dp"
+            android:id="@+id/iv_user_notification"
+            android:layout_marginRight="16dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_user_notification"
+            android:layout_toEndOf="@+id/iv_user_notification"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_notification_text"
+                android:text="adigunhammed started following you"
+                android:textColor="@color/textColorSecondary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 minutes ago"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:id="@+id/tv_notification_time"
+                android:textAppearance="@style/BoldText"
+                android:textColor="@color/light__"/>
+        </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:id="@+id/vert_view"
+            android:background="@color/colorAccent" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/vert_view"
+            android:layout_toRightOf="@+id/iv_user_notification"
+            android:layout_toEndOf="@+id/iv_user_notification"
+            android:background="@color/divider"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
